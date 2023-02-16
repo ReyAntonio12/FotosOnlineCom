@@ -1,17 +1,33 @@
 :root{
     --general-font: 'Quicksand', sans-serif;
+    --yellow-color: #e9f581;
+    --gray-color: #afa3a3;
+    --black-color: #000000;
+    --dark-gray-color: #3534349c;
+    --font-weight-small: 25px;
+    --font-weight-medium: 35px;
+    --font-weight-large: 45px;
+    --font-weight-Xlarge: 55px;
 }
 
 html{
     font-family: var(--general-font);
 }
 
+body{
+    margin: 0;
+    padding: 0;
+}
+
 /*Barra de navegacion*/
+
+
 
 .contenedor__elementos{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding-bottom: 30px;
 }
 
 .contenedor--logo{
@@ -42,15 +58,21 @@ li{
     display: inline-block;
 }
 
+.Dropdown{
+    border: 1px solid #792f75;
+    border-radius: 3px;
+}
+
 .contenedor--dropdown a{
     display: block;
     padding: 10px;
     text-decoration: none;
     color: #333;
+    
 }
 
 .contenedor--dropdown a:hover{
-    background-color: #ddd;
+    background-color: var(--yellow-color);
 }
 
 .menuDropdown{
@@ -61,4 +83,47 @@ li{
 
 .Dropdown:hover .menuDropdown{
     display: block;
+}
+
+/*Seccion de Inicio*/
+
+.tituloContenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.imagen__titulo img{
+    width: 500px;
+    height: 450px;
+}
+
+.titulo__intro{
+    display: flex;
+    flex-direction: column;
+}
+
+#tituloImportante{
+    font-size: var(--font-weight-small);
+    text-shadow: 2px 3px var(--dark-gray-color);
+}
+
+#actionButton{
+    align-self: center;
+    background-color: #bf8508;
+    border: 1px solid var(--gray-color);
+    border-radius: 6px;
+    color: whitesmoke;
+    padding: 20px 30px;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 1s ease;
+}
+
+#actionButton:hover{
+    background-color: var(--yellow-color);
 }
