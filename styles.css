@@ -3,7 +3,9 @@
     --yellow-color: #e9f581;
     --gray-color: #afa3a3;
     --black-color: #000000;
-    --dark-gray-color: #3534349c;
+    --white-color: #eee8e8;
+    --gray-text-color: #6e6c6c;
+    --dark-gray-color: #35343479;
     --font-weight-small: 25px;
     --font-weight-medium: 35px;
     --font-weight-large: 45px;
@@ -21,13 +23,17 @@ body{
 
 /*Barra de navegacion*/
 
-
+.navegacionContenedor{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--white-color);
+}
 
 .contenedor__elementos{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-bottom: 30px;
 }
 
 .contenedor--logo{
@@ -93,6 +99,8 @@ li{
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    padding-top: 120px;
+    text-align: center;
 }
 
 .imagen__titulo img{
@@ -108,6 +116,10 @@ li{
 #tituloImportante{
     font-size: var(--font-weight-small);
     text-shadow: 2px 3px var(--dark-gray-color);
+}
+
+.titulo__intro p {
+    padding-bottom: 10px;
 }
 
 #actionButton{
@@ -127,3 +139,32 @@ li{
 #actionButton:hover{
     background-color: var(--yellow-color);
 }
+
+/*Como funciona*/
+
+.comoFunciona__titulo{
+    text-align: center;
+    font-size: var(--font-weight-medium);
+}
+
+.contenedor__FuncionImagenes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+#TakingASelfie, #EditingSelfie, #ExpertsSelfie, #ReceivingEmail{
+    width: 190px;
+    height: 185px;
+}
+
+.contenedor--Selfie, .contenedor--Editor, .contenedor--Expertos, .contenedor--email{
+    align-self: center;
+    text-align: center;
+    color: var(--gray-text-color);
+    cursor: pointer;
+}
+
+
