@@ -167,4 +167,58 @@ li{
     cursor: pointer;
 }
 
+/*Documentos Populares*/
 
+.ExtraDocuments{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.documents__images{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.documents--cedula, .documents--USPassport, .documents--CAPassport{
+    align-self: center;
+   border: 1px solid var(--gray-text-color);
+   border-radius: 4px;
+   text-align: center;
+   transition: transform 0,2 ease;
+}
+
+.documents--cedula:hover{
+    transform: scale(1.1);
+}
+
+.documents--USPassport:hover{
+    transform: scale(1.1);
+}
+.documents--CAPassport:hover{
+    transform: scale(1.1);
+}
+
+
+.documents--cedula img{
+    width: 400px;
+    height: 276px;
+}
+
+.documents--USPassport img{
+    width: 400px;
+    height: 276px;
+}
+
+.documents--CAPassport img{
+    width: 400px;
+    height: 276px;
+}
+
+.boton__Documentos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 50px;
+}

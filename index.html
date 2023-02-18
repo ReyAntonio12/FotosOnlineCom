@@ -23,10 +23,10 @@
                         <li class="Dropdown">
                             <a href="#">Documentos que encontraras:</a>
                             <ul class="menuDropdown">
-                                <li><a href="index.html">Foto para Cédula Nacional</a></li>
-                                <li><a href="index.html">Foto para Pasaporte de tu país</a></li>
-                                <li><a href="index.html">Foto para Pasaporte de Estados Unidos</a></li>
-                                <li><a href="index.html">Foto para Pasaporte de Canadá</a></li>
+                                <li><a href="#CedulaIMG">Foto para Cédula Nacional</a></li>
+                                <li><a href="#CedulaIMG">Foto para Pasaporte de tu país</a></li>
+                                <li><a href="#USPassportIMG">Foto para Pasaporte de Estados Unidos</a></li>
+                                <li><a href="#CanadaIMG">Foto para Pasaporte de Canadá</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -71,6 +71,40 @@
             </div>
         </div>
     </section>
-    
+    <section class="ExtraDocuments">
+      <h2 class="comoFunciona__titulo" >Documentos Populares</h2>
+      <div class="documents__images">
+        <div class="documents--cedula">
+            <img src="assets/ID.png" alt="Esta es la foto de la cedula" id="CedulaIMG" />
+            <p>Foto para la cédula de tu país</p>
+        </div>
+        <div class="documents--USPassport">
+            <img src="assets/USApassport.png" alt="Esta es la foto del pasaporte de EU" id="USPassportIMG" />
+            <p>Foto y documento para el pasaporte de Estados Unidos</p>
+        </div>
+        <div class="documents--CAPassport">
+            <img src="assets/CanadaPassport.png" alt="Pasaporte canadiense" id="CanadaIMG"/>
+            <p>Foto y documento para el pasaporte de Canada</p>
+        </div> 
+      </div>
+      <div class="boton__Documentos">
+        <a href="index.html" id="actionButton" >Subir Documento</a> 
+      </div>
+    </section>
+   
+    <section class="FormContainer">
+        <form>
+            <h2>¿Te gustaría recibir mas informacion?</h2>
+            <p>Dejanos tus datos y te contactaremos:</p>
+            <label for="FullName">Tu nombre: </label>
+            <input type="text" name="FullName" id="FName" />
+            <label for="Email">Tu email: </label>
+            <input type="email" name="Email" id="YourEmail" />
+        </form>
+    </section>
+
+    <footer>
+
+    </footer> 
 </body>
 </html>
