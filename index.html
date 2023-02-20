@@ -94,17 +94,28 @@
    
     <section class="FormContainer">
         <form>
+            <fieldset>
             <h2>¿Te gustaría recibir mas informacion?</h2>
             <p>Dejanos tus datos y te contactaremos:</p>
+            <br>
             <label for="FullName">Tu nombre: </label>
             <input type="text" name="FullName" id="FName" />
             <label for="Email">Tu email: </label>
             <input type="email" name="Email" id="YourEmail" />
+            </fieldset>
+            <input type="submit" id="SendInfo" value="Enviar" onclick="datosFormulario()" />
         </form>
     </section>
 
     <footer>
-
+        <div class="end__Container">
+            <div class="end--marcaRegistrada">®FotosOnline.com</div>
+        </div>
+        <div class="end--Privacidad">
+            <span><a href="index.html" class="visited">·Privacidad</a></span>
+            <span><a href="index.html" class="visited">·Terminos</a></span>
+        </div>
     </footer> 
+    <script src="main.js"></script>
 </body>
 </html>

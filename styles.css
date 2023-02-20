@@ -10,6 +10,8 @@
     --font-weight-medium: 35px;
     --font-weight-large: 45px;
     --font-weight-Xlarge: 55px;
+    --purple-color: #a266b4;
+    --footer-color: #1b1082;
 }
 
 html{
@@ -221,4 +223,85 @@ li{
     flex-direction: row;
     justify-content: center;
     padding-top: 50px;
+}
+
+/*Formulario de informacion*/
+
+.FormContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+form{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+fieldset{
+    align-self: center;
+    width:900px;
+    border: 1px solid var(--purple-color);
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+input{
+    width: 300px;
+    height: 40px;
+    border-radius: 3px;
+}
+
+#SendInfo{
+    background-color: #bf8508;
+    border: 1px solid var(--gray-color);
+    border-radius: 6px;
+    color: whitesmoke;
+    text-align: center;
+    font-size: var(--font-weight-small);
+    cursor: pointer;
+    animation-name: enviar;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-iteration-count: 3;
+}
+
+/*animacion enviar*/
+
+@keyframes enviar {
+    0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+}
+
+/*Footer*/
+
+footer{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 36%, rgba(0,212,255,1) 100%);
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+span{
+    padding: 20px;
+}
+
+.visited:hover{
+    color:#a266b4;
+}
+
+.visited:visited{
+    color: white;
 }
